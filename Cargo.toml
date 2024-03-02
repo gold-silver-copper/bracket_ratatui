@@ -1,6 +1,6 @@
 [package]
 name = "bracket_ratatui"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "Ratatui in bracket-lib !! See examples . "
 license = "MIT OR Apache-2.0"
