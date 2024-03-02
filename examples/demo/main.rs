@@ -27,7 +27,7 @@ mod ui;
 #[derive(Debug, FromArgs)]
 struct Cli {
     /// time in ms between two ticks.
-    #[argh(option, default = "250")]
+    #[argh(option, default = "5")]
     tick_rate: u64,
     /// whether unicode symbols are used to improve the overall look of the app
     #[argh(option, default = "true")]
@@ -36,9 +36,9 @@ struct Cli {
 
 fn main() -> Result<(), Box<dyn Error>> {
     let cli: Cli = argh::from_env();
-    let tick_rate = Duration::from_millis(cli.tick_rate);
+  
 
-    crate::bracket::run(tick_rate, cli.enhanced_graphics);
+    crate::bracket::run(cli.tick_rate, cli.enhanced_graphics);
 
     Ok(())
 }

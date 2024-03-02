@@ -71,7 +71,7 @@ impl GameState for State {
     }
 }
 
-pub fn run(ticky_rate: Duration, enhanced_graphics: bool) -> Result<(), Box<dyn Error>> {
+pub fn run(ticky_rate: u64, enhanced_graphics: bool) -> Result<(), Box<dyn Error>> {
     bracket_lib::prelude::link_resource!(TILE_FONT3, "resources/unicode_16x16.png");
 
     let context = BTermBuilder::new()
@@ -80,6 +80,7 @@ pub fn run(ticky_rate: Duration, enhanced_graphics: bool) -> Result<(), Box<dyn 
         .with_title("Hello Minimal Bracket World")
         .with_font("unicode_16x16.png", 16, 16)
         .with_simple_console(80, 50, "unicode_16x16.png")
+        .with_fps_cap(ticky_rate as f32)
         .build()
         .unwrap();
 

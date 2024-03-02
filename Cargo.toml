@@ -1,6 +1,6 @@
 [package]
 name = "bracket_ratatui"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 description = "Ratatui in bracket-lib !! See examples . "
 license = "MIT OR Apache-2.0"
@@ -18,6 +18,7 @@ exclude = [
 
 bracket-lib = { version = "0.8.7"}
 ratatui = { version = "0.26.1",  default-features = false }
+#bracket-lib = { version = "0.8.7", default-features = false , features=["crossterm"]}  <- do this to run from crossterm
 
 [dev-dependencies]
 once_cell = { version = "1.19.0"}
