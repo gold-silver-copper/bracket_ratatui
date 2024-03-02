@@ -1,0 +1,34 @@
+[package]
+name = "bracket_ratatui"
+version = "0.1.0"
+edition = "2021"
+description = "Ratatui in bracket-lib !! See examples . "
+license = "MIT OR Apache-2.0"
+
+exclude = [
+  "assets/*",
+  ".github",
+  "Makefile.toml",
+  "CONTRIBUTING.md",
+  "*.log",
+  "tags",
+]
+
+[dependencies]
+
+bracket-lib = { version = "0.8.7"}
+ratatui = { version = "0.26.1",  default-features = false }
+
+[dev-dependencies]
+once_cell = { version = "1.19.0"}
+rand =  { version = "0.8.5"}
+argh = "0.1.12"
+
+[[example]]
+name = "hello_bracket"
+doc-scrape-examples = true
+
+
+[[example]]
+name = "demo"
+doc-scrape-examples = false
