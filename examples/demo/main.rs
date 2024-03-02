@@ -26,8 +26,8 @@ mod ui;
 /// Demo
 #[derive(Debug, FromArgs)]
 struct Cli {
-    /// time in ms between two ticks.
-    #[argh(option, default = "5")]
+    /// fps
+    #[argh(option, default = "10")]
     tick_rate: u64,
     /// whether unicode symbols are used to improve the overall look of the app
     #[argh(option, default = "true")]
