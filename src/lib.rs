@@ -1,3 +1,3 @@
-mod cdda_parser;
+mod bracket_backend;
 
-pub use cdda_parser::CDDAParser;
+pub use bracket_backend::BracketBackend;
