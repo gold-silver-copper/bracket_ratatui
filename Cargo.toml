@@ -1,8 +1,8 @@
 [package]
-name = "bracket_ratatui"
-version = "0.1.3"
+name = "cdda_json_to_ron"
+version = "0.1.0"
 edition = "2021"
-description = "Ratatui in bracket-lib !! See examples . "
+description = "lib skeleton "
 license = "MIT OR Apache-2.0"
 
 exclude = [
@@ -16,20 +16,12 @@ exclude = [
 
 [dependencies]
 
-bracket-lib = { version = "0.8.7"}
-ratatui = { version = "0.26.1",  default-features = false }
 #bracket-lib = { version = "0.8.7", default-features = false , features=["crossterm"]}  <- do this to run from crossterm
 
 [dev-dependencies]
-once_cell = { version = "1.19.0"}
-rand =  { version = "0.8.5"}
-argh = "0.1.12"
+
 
 [[example]]
-name = "hello_bracket"
+name = "hello_cdda"
 doc-scrape-examples = true
 
-
-[[example]]
-name = "demo"
-doc-scrape-examples = false
