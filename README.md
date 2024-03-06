@@ -8,7 +8,7 @@
 [![Rust](https://github.com/gold-silver-copper/bracket_ratatui/workflows/CI/badge.svg)](https://github.com/gold-silver-copper/bracket_ratatui/actions)
 
 This crate provides an [Ratatui](https://github.com/ratatui-org/ratatui) integration for  [bracket-lib](https://github.com/amethyst/bracket-lib) , a roguelike and terminal library for rust.
-This is my first rust contribution so please help with pull requests, and be aware that it's a bit buggy and unoptimized :D Breaking changes are quite likely in the near future.
+Very WIP, bracket-lib is currently unmaintained and does not support all the features needed for a good ratatui integration. But this is a good proof of concept. 
 
 
 ## Dependencies
