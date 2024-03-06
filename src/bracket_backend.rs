@@ -103,8 +103,12 @@ fn draw_from_xyc(b_term: &mut BTerm, x: u16, y: u16, c: &Cell) {
     let fg = BracketColor::from_rat_color(c.fg, true);
     let bg = BracketColor::from_rat_color(c.bg, false);
 
-    let mut proper_value = c.symbol().to_string();
+   let mut proper_value = c.symbol().to_string();
 
+    /*
+
+     
+    THIS DOESNT WORK BUT IS WHAT IS NEEDED FOR UNICODE RATATUI SUPPORT EXTRAS
     if c.modifier.intersects(Modifier::UNDERLINED) {
         proper_value = format!("{}{}", proper_value, '\u{0332}');
     }
@@ -112,7 +116,7 @@ fn draw_from_xyc(b_term: &mut BTerm, x: u16, y: u16, c: &Cell) {
     if c.modifier.intersects(Modifier::CROSSED_OUT) {
         proper_value = format!("{}{}", proper_value, '\u{0336}');
     }
-
+*/
     b_term.print_color(x, y, fg, bg, proper_value.as_str());
 }
 
